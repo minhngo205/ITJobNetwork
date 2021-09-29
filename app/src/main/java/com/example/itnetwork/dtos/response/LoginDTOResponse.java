@@ -1,41 +1,65 @@
 package com.example.itnetwork.dtos.response;
 
 public class LoginDTOResponse {
-    private String token;
-    private String id;
-    private String email;
-    private String role;
-    private int roleID;
+    Data data;
 
-    public String getId() {
-        return id;
+    // Getter Methods
+    public Data getData() {
+        return data;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    // Setter Methods
+    public void setData(Data dataObject) {
+        this.data = dataObject;
     }
 
-    public String getEmail() {
-        return email;
-    }
+    public static class Data {
+        private String token;
+        private String id;
+        private String email;
+        private String role;
+        private int roleId;
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+        // Getter Methods
+        public String getToken() {
+            return token;
+        }
 
-    public String getRole() {
-        return role;
-    }
+        public String getId() {
+            return id;
+        }
 
-    public void setRole(String role) {
-        this.role = role;
-    }
+        public String getEmail() {
+            return email;
+        }
 
-    public int getRoleID() {
-        return roleID;
-    }
+        public String getRole() {
+            return role;
+        }
 
-    public void setRoleID(int roleID) {
-        this.roleID = roleID;
+        public float getRoleId() {
+            return roleId;
+        }
+
+        // Setter Methods
+        public void setToken(String token) {
+            this.token = token;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
+
+        public void setRole(String role) {
+            this.role = role;
+        }
+
+        public void setRoleId(int roleId) {
+            this.roleId = roleId;
+        }
     }
 }

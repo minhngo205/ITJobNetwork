@@ -1,4 +1,4 @@
-package com.example.itnetwork;
+package com.example.itnetwork.utils;
 
 import android.app.Activity;
 import android.os.Build;
