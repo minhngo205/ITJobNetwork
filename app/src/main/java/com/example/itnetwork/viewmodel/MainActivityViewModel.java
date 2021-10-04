@@ -41,7 +41,7 @@ public class MainActivityViewModel extends ViewModel {
             @Override
             public void onResponse(@NonNull Call<LoginDTOResponse> call, @NonNull Response<LoginDTOResponse> response) {
                 if(response.isSuccessful()){
-                    Log.d(TAG, "onResponse: "+response.body().getData());
+                    Log.d(TAG, "onResponse: "+response.body().getData().getId());
                     LoginData.postValue(response.body());
                 } else {
                     LoginData.postValue(null);
