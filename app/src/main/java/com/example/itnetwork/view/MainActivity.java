@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding loginBinding;
     private MainActivityViewModel loginViewModel;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         loginBinding.btnLogin.setOnClickListener(view -> onLogin());
+
 
     }
 
